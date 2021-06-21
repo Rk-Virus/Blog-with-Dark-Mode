@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific News</title>
+    <style>
+        body{
+            background-color: white;
+            margin: 20px;
+        }
+        header{
+            text-align: center;
+            background-color:rgb(202, 231, 231,0.9);
+            position: sticky;
+            top: 5px;
+        }
+        .tagline{
+            font-size: x-large;
+        }
+        .content{
+            font-size: larger;
+            background-color:rgb(252, 247, 240,0.5);
+            text-align: justify;
+        }
+
+        /* Additional CSS for navigation buttons */
+        .navigate{
+            height: 15vh;
+            width: 10vw;
+            background-color: rgba(51, 54, 54, 0.8);
+            position: fixed;
+            left: 85vw;
+            top: 40vw;
+            border-radius: 15px;
+        }
+        .btn{
+            text-transform: uppercase;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        .btn:hover{
+            color:rgb(134, 252, 154);
+            text-shadow: 0px 0px 5px rgb(0, 250, 0);
+            cursor: pointer;
+        }
+        .btn h2::selection{
+            background-color: rgba(51, 54, 54, 0.6);;
+            color:rgb(134, 252, 154);
+            text-shadow: 0px 0px 5px rgb(0, 250, 0)
+        }
+
+        /* CSS for dark mode  */
+        .dark{
+            background-color: black;
+            color: aliceblue;
+        }
+
+        #modebtn{
+            font-size: large;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <br>
+        <h1><u> New Quantum Theory Heats Up Thermodynamic Research <button id="modebtn" onclick="toggleMode()">Dark</button></u></h1>
+        <br>
+    </header>
+
+    <!-- navigation button elements -->
+    <div class="navigate">
+        <div class="btn" onclick="moveUp()"><h2>up</h2></div>
+        <div class="btn" onclick="moveDown()"><h2>down</h2></div>
+    </div>
+
+    <article>
+        <p class="tagline">Researchers have developed a new quantum version of a 150-year-old thermodynamical thought experiment that could pave the way for the development of quantum heat engines.</p>
+        <p class="content">Mathematicians from the University of Nottingham have applied new quantum theory to the Gibbs paradox and demonstrated a fundamental difference in the roles of information and control between classical and quantum thermodynamics. Their research has been published today in Nature Communications.
+
+            The classical Gibbs paradox led to crucial insights for the development of early thermodynamics and emphasises the need to consider an experimenter's degree of control over a system.
+            
+            The research team developed a theory based on mixing two quantum gases -- for example, one red and one blue, otherwise identical -- which start separated and then mix in a box. Overall, the system has become more uniform, which is quantified by an increase in entropy. If the observer then puts on purple-tinted glasses and repeats the process; the gases look the same, so it appears as if nothing changes. In this case, the entropy change is zero.
+            
+            The lead authors on the paper, Benjamin Yadin and Benjamin Morris, explain: "Our findings seem odd because we expect physical quantities such as entropy to have meaning independent of who calculates them. In order to resolve the paradox, we must realise that thermodynamics tells us what useful things can be done by an experimenter who has devices with specific capabilities. For example, a heated expanding gas can be used to drive an engine. In order to extract work (useful energy) from the mixing process, you need a device that can "see" the difference between red and blue gases."
+            
+            Classically, an "ignorant" experimenter, who sees the gases as indistinguishable, cannot extract work from the mixing process. The research shows that in the quantum case, despite being unable to tell the difference between the gases, the ignorant experimenter can still extract work through mixing them.
+            
+            Considering the situation when the system becomes large, where quantum behaviour would normally disappear, the researchers found that the quantum ignorant observer can extract as much work as if they had been able to distinguish the gases. Controlling these gases with a large quantum device would behave entirely differently from a classical macroscopic heat engine. This phenomenon results from the existence of special superposition states that encode more information than is available classically.
+            
+            Professor Gerardo Adesso said: "Despite a century of research, there are so many aspects we don't know or we don't understand yet at the heart of quantum mechanics. Such a fundamental ignorance, however, doesn't prevent us from putting quantum features to good use, as our work reveals. We hope our theoretical study can inspire exciting developments in the burgeoning field of quantum thermodynamics and catalyse further progress in the ongoing race for quantum-enhanced technologies.
+            
+            "Quantum heat engines are microscopic versions of our everyday heaters and refrigerators, which may be realised with just one or a few atoms (as already experimentally verified) and whose performance can be boosted by genuine quantum effects such as superposition and entanglement. Presently, to see our quantum Gibbs paradox played out in a laboratory would require exquisite control over the system parameters, something which may be possible in fine-tuned "optical lattice" systems or Bose-Einstein condensates -- we are currently at work to design such proposals in collaboration with experimental groups."
+The lead authors on the paper, Benjamin Yadin and Benjamin Morris, explain: "Our findings seem odd because we expect physical quantities such as entropy to have meaning independent of who calculates them. In order to resolve the paradox, we must realise that thermodynamics tells us what useful things can be done by an experimenter who has devices with specific capabilities. For example, a heated expanding gas can be used to drive an engine. In order to extract work (useful energy) from the mixing process, you need a device that can "see" the difference between red and blue gases."
+            
+            Classically, an "ignorant" experimenter, who sees the gases as indistinguishable, cannot extract work from the mixing process. The research shows that in the quantum case, despite being unable to tell the difference between the gases, the ignorant experimenter can still extract work through mixing them.
+            
+            Considering the situation when the system becomes large, where quantum behaviour would normally disappear, the researchers found that the quantum ignorant observer can extract as much work as if they had been able to distinguish the gases. Controlling these gases with a large quantum device would behave entirely differently from a classical macroscopic heat engine. This phenomenon results from the existence of special superposition states that encode more information than is available classically.
+            
+            Professor Gerardo Adesso said: "Despite a century of research, there are so many aspects we don't know or we don't understand yet at the heart of quantum mechanics. Such a fundamental ignorance, however, doesn't prevent us from putting quantum features to good use, as our work reveals. We hope our theoretical study can inspire exciting developments in the burgeoning field of quantum thermodynamics and catalyse further progress in the ongoing race for quantum-enhanced technologies.
+            
+            "Quantum heat engines are microscopic versions of our everyday heaters and refrigerators, which may be realised with just one or a few atoms (as already experimentally verified) and whose performance can be boosted by genuine quantum effects such as superposition and entanglement. Presently, to see our quantum Gibbs paradox played out in a laboratory would require exquisite control over the system parameters, something which may be possible in fine-tuned "optical lattice" systems or Bose-Einstein condensates -- we are currently at work to design such proposals in collaboration with experimental groups."
+            <br><br><br><br><br><br><br><br><br><br>
+            </p>
+    </article>
+
+    <!-- script here to add interactivity to the page -->
+    <script src="interact.js"></script>
+</body>
+</html>
