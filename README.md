@@ -1,5 +1,4 @@
 # Blog with Dark Mode
-## blog with eye comfirtable features
 
 The project is a simple blog, Created as to impliment JS features.
 
